@@ -1,0 +1,16 @@
+POST http://localhost:5004/longrunningjob
+Content-Type: application/json
+
+{ "id": "1143", "iterations": 15, "delay": 1000, "message": "working..." }
+
+### 
+GET http://localhost:5004/job/v2/4fafa835adf70391ed0bfef624a62096
+
+###
+POST http://localhost:5004/longrunning
+Content-Type: application/json
+
+{ "id": "1144", "iterations": 5, "errorAtIteration": 3, "delay": 1000, "message": "working..." }
+
+### 
+GET http://localhost:5004/job/v2/ad546f740e199f27015bdc46a2919df0
